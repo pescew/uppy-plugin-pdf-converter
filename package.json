@@ -1,0 +1,31 @@
+{
+  "name": "@pescew/uppy-plugin-pdf-converter",
+  "version": "1.0.0",
+  "description": "Uppy plugin to convert PDFs to images before upload, using PDF.js package",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pescew/uppy-plugin-pdf-converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pescew/uppy-plugin-pdf-converter/issues"
+  },
+  "homepage": "https://github.com/pescew/uppy-plugin-pdf-converter",
+  "main": "src/uppy-plugin-pdf-converter.js",
+  "keywords": [
+    "uppy",
+    "uppy-plugin",
+    "file uploader",
+    "pdf",
+    "convert",
+    "image"
+  ],
+  "author": "Walter Pesce",
+  "license": "MIT",
+  "dependencies": {
+    "@uppy/core": "^2.3.1",
+    "pdfjs-dist": "^2.14.305"
+  }
+}
