@@ -1,0 +1,1 @@
+worker = require('pdfjs-dist/build/pdf.worker.entry')
