@@ -10,6 +10,8 @@ PDFConverter uses Mozilla's [PDF.js](https://github.com/mozilla/pdf.js/).
 
 Uppy is developed by [Transloadit](https://transloadit.com).
 
+https://user-images.githubusercontent.com/1776798/177047294-dd9315d2-f741-4b55-9d38-ffd1bf49d440.mp4
+
 ## Example
 
 ```js
