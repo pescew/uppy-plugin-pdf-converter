@@ -34,6 +34,8 @@ export default class PDFConverter extends BasePlugin {
             new URL('./worker.js', import.meta.url),
             {type: 'module'},
         );
+        
+        this.originalOnBeforeFileAdded = this.uppy.opts.onBeforeFileAdded
 
         this.i18nInit()
     }
@@ -162,6 +164,8 @@ export default class PDFConverter extends BasePlugin {
                             this.uppy.removeFile(currentFile.id);
                         }
                     });
+                } else {
+                    this.originalOnBeforeFileAdded(currentFile, files)
                 }
             },
         })
@@ -169,9 +173,7 @@ export default class PDFConverter extends BasePlugin {
 
     uninstall() {
         this.uppy.setOptions({
-            onBeforeFileAdded: (currentFile, files) => {
-                return
-            },
+            onBeforeFileAdded: this.originalOnBeforeFileAdded,
         })
     }
 }
